@@ -6,192 +6,192 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+
   	<h1>Webpage development using HTML and CSS</h1>
-   <div class="lesson">
-    <h2>Lesson 1</h2>
 
-    <div class="concept">
-    	<div class="concept-title">Overview of the Internet</div>
-    	<div class="concept-description">
-		--parts of the Internet: browsers, the internet, servers, and HTTP.<br>
-		--World Wide Web consists of a number of HTML documents connected by HyperLinks.
+   	<div class="lesson">
+    	<h2>Lesson 1</h2>
+
+    	<div class="concept">
+    		<div class="concept-title">Overview of the Internet</div>
+    		<div class="concept-description">
+				--parts of the Internet: browsers, the internet, servers, and HTTP.<br>
+				--World Wide Web consists of a number of HTML documents connected by HyperLinks.
+			</div>
+    	</div>
+    	<div class="concept">
+    		<div class="concept-title">Introduction to HTML</div>
+   			<div class="concept-description">
+				--An HTML editing tool: jsfiddle.net/WW3bh<br>
+				--Another HTML editing tool: scratchpad.io<br>
+				<br>
+				--HTML markup is made of "tags" of the form: &lt;name&gt; <br>
+				each of which forms an "element" of the form: &lt;name&gt;contents &lt;/name&gt; <br>
+				<br>
+				Some <b>tags: </b><br>
+				<br>
+				<em>"inline" tag</em>: rendered inline with preceding and following text<br>
+				&lt;b&gt;<br>
+				&lt;em&gt; (for italics rendering)<br>
+				&lt;a&gt; ("anchor" used for making links)<br>
+				following 2 tags are also <em>"void"</em> tags ()don't have contents, & don't need closing tags<br>	
+				&lt;img&gt;<br>
+				&lt;br&gt; <br>
+				<br>
+				<em>"block" element:</em> rendered in an invisible box of a given width and height<br>
+				&lt;p&gt; (paragraph tag) - it is not a void tag, because it has contents<br>
+				&lt;form&gt;<br>
+				<br>
+
+				<em>"container"</em> element (does nothing but "contain" elements): <br>
+				&lt;span&gt; (it is an "inline" tag)<br>
+				&lt;div&gt; (it is a "block" tag)<br>
+				<br>
+
+				<b>Attributes</b> are properties of tags:<br>
+				&lt;img href="mypic.gif" alt="mypic"&gt; (href, alt are attributes)<br>
+				&lt;div class="myclass" &gt; (class is an attribute may be used for CSS)<br>
+				<br>
+
+				--multiple spaces, tabs, newline are rendered to a single space<br> 
+				<br>
+
+				<b>Structure</b> of a complete HTML document; So far we just saw isolated "tags":<br>
+				&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+					&lt;head&gt;<br>
+						...has metadata about the document, and CSS, JavaScript...<br>
+						&lt;title&gt;...&lt;/title&gt;<br>
+						...<br>
+					&lt;/head&gt;<br>
+					&lt;body&gt;<br>
+						..."contents" of the "document" with tags; subject of this course mostly this<br>
+					&lt;/body&gt;<br>
+				&lt;html&gt;<br> 
+			</div>
+    	</div>
+   </div>
+
+
+   <div class="lesson">
+		<h2>Lesson 2</h2>
+	
+		<div class="concept">
+			<div class="concept-title">Creating a Structured Document with HTML</div>
+			<div class="concept-description">
+				The input to webpage development is a webpage design as PDF/image file.
+				The output is the result of Frontend development which involves 
+				HTML, CSS, JavaScript. In this nanodegree we only cover HTML and CSS.<br>
+				The browser uses HTML document to build a tree-like structure called 
+				DOM (Document Object Model), each node of which is an HTML element.
+				Every HTML element in a webpage is rendered in a rectangular area of the webpage.<br>
+				<br>
+			</div>
 		</div>
-    </div>
-    <div class="concept">
-    	<div class="concept-title">Introduction to HTML</div>
-   		<div class="concept-description">
-		--An HTML editing tool: jsfiddle.net/WW3bh<br>
-		--Another HTML editing tool: scratchpad.io<br>
-		<br>
-		--HTML markup is made of "tags" of the form: &lt;name&gt; <br>
-		each of which forms an "element" of the form: &lt;name&gt;contents &lt;/name&gt; <br>
-		<br>
-		Some <b>tags: </b><br>
-		<br>
-		<em>"inline" tag</em>: rendered inline with preceding and following text<br>
-			&lt;b&gt;<br>
-			&lt;em&gt; (for italics rendering)<br>
-			&lt;a&gt; ("anchor" used for making links)<br>
-		following 2 tags are also <em>"void"</em> tags ()don't have contents, & don't need closing tags<br>	
-			&lt;img&gt;<br>
-			&lt;br&gt; <br>
-		<br>
-		<em>"block" element:</em> rendered in an invisible box of a given width and height<br>
-			&lt;p&gt; (paragraph tag) - it is not a void tag, because it has contents<br>
-			&lt;form&gt;<br>
-		<br>
-
-		<em>"container"</em> element (does nothing but "contain" elements): <br>
-			&lt;span&gt; (it is an "inline" tag)<br>
-			&lt;div&gt; (it is a "block" tag)<br>
-		<br>
-
-		<b>Attributes</b> are properties of tags:<br>
-			&lt;img href="mypic.gif" alt="mypic"&gt; (href, alt are attributes)<br>
-			&lt;div class="myclass" &gt; (class is an attribute may be used for CSS)<br>
-		<br>
-
-		--multiple spaces, tabs, newline are rendered to a single space<br> 
-		<br>
-
-		<b>Structure</b> of a complete HTML document; So far we just saw isolated "tags":<br>
-			&lt;!DOCTYPE html&gt;<br>
-			&lt;html&gt;<br>
-				&lt;head&gt;<br>
-					...has metadata about the document, and CSS, JavaScript...<br>
-					&lt;title&gt;...&lt;/title&gt;<br>
-					...<br>
-				&lt;/head&gt;<br>
-				&lt;body&gt;<br>
-					..."contents" of the "document" with tags; subject of this course mostly this<br>
-				&lt;/body&gt;<br>
-			&lt;html&gt;<br> 
+		<div class="concept">
+			<div class="concept-title">Languages:</div>
+			<div class="concept-description">
+				HTML: language for the "structure" of a webpage.<br>
+				CSS: language for the "style" (appearance) of a webpage. <br>
+				<br>
+			</div>
 		</div>
-    </div>
-   </div>
-   <div class="lesson">
-	<h2>Lesson 2</h2>
 	
-	<div class="concept">
-		<div class="concept-title">Creating a Structured Document with HTML</div>
-		<div class="concept-description">
-	The input to webpage development is a webpage design as PDF/image file.
-	The output is the result of Frontend development which involves 
-	HTML, CSS, JavaScript. In this nanodegree we only cover HTML and CSS.<br>
-	The browser uses HTML document to build a tree-like structure called 
-	DOM (Document Object Model), each node of which is an HTML element.
-	Every HTML element in a webpage is rendered in a rectangular area of the webpage.<br>
-	<br>
-	</div>
-	</div>
-	<div class="concept">
-		<div class="concept-title">Languages:</div>
-		<div class="concept-description">
-	HTML: language for the "structure" of a webpage.<br>
-	CSS: language for the "style" (appearance) of a webpage. <br>
-	<br>
-	</div>
-	</div>
+		<div class="concept">
+			<div class="concept-title">Tools:</div>
+			<div class="concept-description">
+				Besides the languages (HTML and CSS), Tools are very important for webpage development.<br>
+				<em>Editing tool:</em><br>
+				--scratchpad.io is a good editor to start development since it is easy and feedback is immediate. It can not be used to share the web page though.<br>
+				--codepen.io is an intermediate level editing tool. It allows sharing and saving of developed webpage. We need to create an account on its web page though.<br>
+				--Sublime Text 2 is the tool of choice for Professional webpage development.<br>
+				<br>
 	
-	<div class="concept">
-		<div class="concept-title">Tools:</div>
-		<div class="concept-description">
-	Besides the languages (HTML and CSS), Tools are very important for webpage 
-	development.<br>
-	<em>Editing tool:</em><br>
-	--scratchpad.io is a good editor to start development since it is easy and feedback is immediate. It can not be used to share the web page though.<br>
-	--codepen.io is an intermediate level editing tool. It allows sharing and saving of developed webpage. We need to create an account on its web page though.<br>
-	--Sublime Text 2 is the tool of choice for Professional webpage development.<br>
-	<br>
-	
-<em>Troubleshooting/Debugging tool:</em><br>
-	Chrome has very powerful "Developer Tool" that when launched from Menu appears as structure and style panels in addition to the panel where the webpage is rendered. The panels allow in-place changing of structure and style to see the effect on the resulting webpage.<br>
-	Developer Tool is actually a Toolbox. One of the tools in the toolbox allows inspection of structures and styles of various elements of the webpage. In the reverse direction hovering over a structural element in HTML panel highlights the box in the result panel.<br>
-	<br>
-	</div>
-	</div>
-	<div class="concept">
+				<em>Troubleshooting/Debugging tool:</em><br>
+				Chrome has very powerful "Developer Tool" that when launched from Menu appears as structure and style panels in addition to the panel where the webpage is rendered. The panels allow in-place changing of structure and style to see the effect on the resulting webpage.<br>
+				Developer Tool is actually a Toolbox. One of the tools in the toolbox allows inspection of structures and styles of various elements of the webpage. In the reverse direction hovering over a structural element in HTML panel highlights the box in the result panel.<br>
+				<br>
+			</div>
+		</div>
+		<div class="concept">
 
-	<div class="concept-title">Development steps:</div>
-	<div class="concept-description">
-	Everything in a webpage is a box. Start development from one big box that is
-	the entire webpage, and progressively specify details and positions of smaller boxes; each box should be defined with a "div" tag. The contents of boxes are filled next. To add style give each "div" tag a "class" attribute with informative name.<br>
-	<br>
-	</div>
-	</div>
+			<div class="concept-title">Development steps:</div>
+			<div class="concept-description">
+				Everything in a webpage is a box. Start development from one big box that is the entire webpage, and progressively specify details and positions of smaller boxes; each box should be defined with a "div" tag. The contents of boxes are filled next. To add style give each "div" tag a "class" attribute with informative name.<br>
+				<br>
+			</div>
+		</div>
    </div>
+
 
    <div class="lesson">
+		<h2>Lesson 3</h2>
 
+		<div class="concept">
+  			<div class="concept-title">General:</div>
+  			<div class="concept-description">
+				-CSS (Cascading Style Sheets)code is used to add style (appearance) to HTML elements on a webpage; "Cascading" means for each HTML element the more specific style rule ultimately applies<br> 
+				CSS rules:<br> 
+				&lt;selector&gt; determines the elements to which the rules apply such as<br> 
+				"element tag":<br> 
+				"class (ex. .description)": used for styling "many similar elements of possibly different tags". The use of class helps ""avoid repetition" of CSS code.<br> 
+				"id (#lesson1)": used to style a "unique" element; although possible to use it like a class it is not recommended. Uniqueness is also used by JavaScript.<br>  
+				<br> 
+				-each rule is a line of the form property:value<br> 
+				&lt;selector&gt; {<br> 
+				property: value;<br> 
+				...<br> 
+				}<br> 
+				<br> 
+				
+				<em>Some useful rules:</em><br> 
+				-"p {line-height: ...}" - controls space between consecutive lines of text<br>
+				-"background-image: url(images/myImage.png)"<br> 
+				<br>
 
-<h2>Lesson 3</h2>
+				-various CSS properties are listed at: http://developer.mozilla.org/en-US/docs/Web/CSS/Reference<br> 
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">Inheritence:</div>
+			<div class="concept-description">
+				an element "inherits" style rules from its parents which it can override; Browsers have default styles builtin which can be overridden.<br>
+				-descendent elements "inherit text-relatd properties" such as: color, font, letter-spacing, line-height, list-style, txt-align, text-indent, text-transform, visibility, white-space, word-spacing<br>
+				-descendent elements "do not inherit box-related properties": background, border, display, float and clear, height and width, margin, min/max height/width, outline, overflow, padding, position, text-decoration, vertical-align, z-index<br>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">The Box Model:</div>
+			<div class="concept-description">
+				-A "box" is basis of applying CSS rules. Boxes have 4 components (from outermost):<br>
+				Margin: to provide space between boxes; it is transparent (no background color) <br>
+				Border: our size of element box with rule "box-sizing: border-box" <br>
+				Padding: clears an area around the content <br>
+				Content: <br>
+				<br>
+				-div and span don't have any "default" style applied by the browsers<br>
+					-"div" elements are for layout control and group things together; their default width is browser width; with "width: ##%" the box resizes as browser is resized, if specified as number of pixels (##px) then no box resizing happens; "max-width" is used to specify an upward bound on a resizeable box size. <br>
+					-"span" elements are for decorating (styling) elements inline<br>
+					div { display: flex; } - this rule allows child elements to be placed side by side if space permits; by default "div" elements occupy entire width of the browser <br>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">Development Process:</div>
+			<div class="concept-description">
+				-First structure a webpage; look for natural boxes from Design document (a pdf or a graphic file), then needed HTML tags, followed by sizing and positioning the boxes; the result is a layout<br>
+				-look for repeated styles and semantic elements (choose the right tag based on its purpose on the webpage) <br>
+				-write HTML <br>
+				-apply styles (from biggest to smallest boxes) <br>
+				-Fix issues <br>
+				-all resources of a webpge should be at or below the root folder of webpage/site <br>
+				-Developer Tools helps in refinement by allowing experimentation with immediate <br>
+				visual feedback<br>
+				-"* { outline: 1px solid red}" CSS rule puts boxes around elements which can be a visual feedback during development <br>
+				-Verify HTML: http://validator.w3.org/#validate_by_input <br>
+				-verify CSS: http://jigsaw.w3.org/css-validator/#validate_by_input <br>
+			</div>
+		</div>
 
-<div class="concept">
-  <div class="concept-title">General:</div>
-  <div class="concept-description">
--CSS (Cascading Style Sheets)code is used to add style (appearance) to HTML elements on a webpage; "Cascading" means for each HTML element the more specific style rule ultimately applies<br> 
-CSS rules:<br> 
-	&lt;selector&gt; determines the elements to which the rules apply such as<br> 
-	"element tag":<br> 
-	"class (ex. .description)": used for styling "many similar elements of possibly different tags". The use of class helps ""avoid repetition" of CSS code.<br> 
-	"id (#lesson1)": used to style a "unique" element; although possible to use it like a class it is not recommended. Uniqueness is also used by JavaScript.<br>  
-	<br> 
-	-each rule is a line of the form property:value<br> 
-	&lt;selector&gt; {<br> 
-		property: value;<br> 
-		...<br> 
-	}<br> 
-<br> 
-<em>Some useful rules:</em><br> 
-	-"p {line-height: ...}" - controls space between consecutive lines of text<br>
-	-"background-image: url(images/myImage.png)"<br> 
-	<br>
--various CSS properties are listed at:
-	http://developer.mozilla.org/en-US/docs/Web/CSS/Reference<br> 
-</div>
-</div>
-<div class="concept">
-	<div class="concept-title">Inheritence:</div>
-<div class="concept-description">
-an element "inherits" style rules from its parents which it can override; Browsers have default styles builtin which can be overridden.<br>
--descendent elements "inherit text-relatd properties" such as:
-	color, font, letter-spacing, line-height, list-style, txt-align, text-indent, text-transform, visibility, white-space, word-spacing<br>
--descendent elements "do not inherit box-related properties":
-	background, border, display, float and clear, height and width, margin, min/max height/width, outline, overflow, padding, position, text-decoration, vertical-align, z-index<br>
-</div>
-</div>
-<div class="concept">
-	<div class="concept-title">The Box Model:</div>
-	<div class="concept-description">
--A "box" is basis of applying CSS rules. Boxes have 4 components (from outermost):<br>
-	Margin: to provide space between boxes; it is transparent (no background color) <br>
-	Border: our size of element box with rule "box-sizing: border-box" <br>
-	Padding: clears an area around the content <br>
-	Content: <br>
-	<br>
--div and span don't have any "default" style applied by the browsers<br>
--"div" elements are for layout control and group things together; their default width is browser width; with "width: ##%" the box resizes as browser is resized, if specified as number of pixels (##px) then no box resizing happens; "max-width" is used to specify an upward bound on a resizeable box size. <br>
--"span" elements are for decorating (styling) elements inline<br>
-div { display: flex; } - this rule allows child elements to be placed side by side if space permits; by default "div" elements occupy entire width of the browser <br>
-</div>
-</div>
-<div class="concept">
-	<div class="concept-title">Development Process:</div>
-	<div class="concept-description">
--First structure a webpage; look for natural boxes from Design document (a pdf or a graphic file), then needed HTML tags, followed by sizing and positioning the boxes; the result is a layout<br>
--look for repeated styles and semantic elements (choose the right tag based on its purpose on the webpage) <br>
--write HTML <br>
--apply styles (from biggest to smallest boxes) <br>
--Fix issues <br>
-	-all resources of a webpge should be at or below the root folder of webpage/site <br>
-	-Developer Tools helps in refinement by allowing experimentation with immediate <br>
-visual feedback<br>
-	-"* { outline: 1px solid red}" CSS rule puts boxes around elements which can be a visual feedback during development <br>
-	-Verify HTML: http://validator.w3.org/#validate_by_input <br>
-	-verify CSS: http://jigsaw.w3.org/css-validator/#validate_by_input <br>
-</div>
-</div>
-
-   </div>
+   	</div>
   </body>
 </html>
